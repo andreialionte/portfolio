@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Reveal from './Reveal';
-// import GlobeComponent from './GlobeComponent';
+import GlobeComponent from './GlobeComponent';
 
 function About() {
   return (
@@ -50,7 +50,7 @@ function About() {
         </div>
       </div>
       <div className="flex justify-center items-center mt-16">
-        {/* <GlobeComponent /> */}
+        <GlobeComponent />
       </div>
       <h1 className="mt-16 text-blue-400 font-bold text-lg md:text-xl">My links</h1>
     </div>
