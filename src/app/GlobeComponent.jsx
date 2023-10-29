@@ -3,7 +3,6 @@ import React, { useReducer, useRef, useEffect, useState } from "react";
 import Globe from "react-globe.gl";
 import * as XLSX from 'xlsx';
 import { countries } from "./countries";
-import { GlobalLayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
 const initialState = "unloaded";
 
@@ -24,7 +23,7 @@ function GlobeComponent() {
     lat: 44.179249, 
     lng: 28.649940, 
     size: 1.5, 
-    city: 'Constanta, Romania', 
+    city: 'Constanta, Romania',
     markerType: 'flag'
   };
 
