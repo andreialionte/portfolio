@@ -3,6 +3,9 @@
 import React from 'react';
 import Reveal from './Reveal';
 import GlobeComponent from './GlobeComponent';
+import Image from 'next/image';
+import Link from 'next/link';
+
 
 function About() {
   return (
@@ -32,7 +35,7 @@ function About() {
             <p className="text-lg md:text-xl mb-4">As a second-year student, I'm continually eager to learn and collaborate with others who share my passion. My journey in programming has been a colorful one, filled with diverse experiences that have contributed to my development as a web developer. Thanks for taking the time to get to know me a bit better!</p>
           </Reveal>
         </div>
-        <div className="w-full md:w-1/2 lg:w-1/3 pl-8">
+        <div className="w-full md:w-1/2 lg:w-1/3 pl-8 max-md:mr-[10px]">
           <div className="sticky top-0">
             <h1 className="text-4xl md:text-5xl font-bold uppercase mb-8">Skills</h1>
             <div className="grid grid-cols-3 gap-4 text-center">
@@ -49,10 +52,20 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-16">
+      {/* <div className="flex justify-center items-center mt-16">
         <GlobeComponent />
-      </div>
+      </div> */}
+      <div className="flex flex-col justify-center items-center mt-2 mb-9">
       <h1 className="mt-16 text-blue-400 font-bold text-lg md:text-xl">My links</h1>
+      <div className="flex flex-row justify-center items-center space-x-4 mt-1">
+      <Link href="https://github.com/andreialionte">
+            <Image src="/github.png" alt="github" width={33} height={33} className="mt-4"/>
+        </Link>
+        <Link href="https://www.linkedin.com/in/andreialionte">
+            <Image src="/linkedin.png" alt="linkedin" width={30} height={30} className="mt-4"/>
+        </Link>
+        </div>
+      </div>
     </div>
   );
 }

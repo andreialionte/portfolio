@@ -65,18 +65,18 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="flex gap-[300px]">
-      <div className="flex flex-col items-center justify-center w-[40%] h-screen mr-[250px]">
-        {/* <GlobeComponent initialCameraPosition={initialCameraPosition} /> */}
-      </div>
-      <div className="mt-[130px] ">
+    <div id="contact" className="flex gap-[300px] justify-center mb-[150px]">
+      {/* <div className="flex flex-col items-center justify-center w-[40%] h-screen mr-[250px]">
+        <GlobeComponent initialCameraPosition={initialCameraPosition} />
+      </div> */}
+      <div className="mt-[150px] ">
         <Reveal>
-          <p className="uppercase opacity-50 text-blue-400">GET IN TOUCH</p>
-          <h1 className="mb-[50px] text-[3rem]">CONTACT</h1>
+          <p className="uppercase opacity-50 text-blue-400 max-md:ml-[30px]">GET IN TOUCH</p>
+          <h1 className="mb-[50px] text-[3rem] max-md:ml-[30px]">CONTACT</h1>
         </Reveal>
         <form ref={form} onSubmit={sendEmail}>
           <Reveal>
-            <h1 className="text-center mt-[50px] bg-[#232323] rounded-[15px] text-[2.6rem] mb-[25px] uppercase ">
+            <h1 className="text-center mt-[20px] bg-[#232323] rounded-[15px] text-[2.6rem]  mb-[20px] first-letter:uppercase max-md:ml-[30px] ">
               <Typewriter
                 options={{
                   strings: [
@@ -90,24 +90,24 @@ function Contact() {
             </h1>
           </Reveal>
           <Reveal>
-            <label className="text-xl font-bold">First Name</label><br />
-            <input type="text" value={fname} onChange={(e) => setFname(e.target.value)} className="w-[400px] h-[30px] rounded-[15px] mb-[20px] text-black " /><br />
+            <label className="text-xl font-bold max-md:ml-[30px]">First Name</label><br />
+            <input type="text" value={fname} onChange={(e) => setFname(e.target.value)} className="w-[400px] h-[30px] rounded-[15px] mb-[20px] text-black max-md:ml-[30px]" /><br />
           </Reveal>
           <Reveal>
-            <label className="text-xl font-bold">Last Name</label><br />
-            <input type="text" value={lname} onChange={(e) => setLname(e.target.value)} className="w-[400px] h-[30px] rounded-[15px] mb-[20px] text-black" /><br />
+            <label className="text-xl font-bold max-md:ml-[30px]">Last Name</label><br />
+            <input type="text" value={lname} onChange={(e) => setLname(e.target.value)} className="w-[400px] h-[30px] rounded-[15px] mb-[20px] text-black max-md:ml-[30px]" /><br />
           </Reveal>
           <Reveal>
-            <label className="text-xl font-bold">E-mail</label><br />
-            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="w-[400px] h-[30px] rounded-[15px] mb-[20px] text-black" /><br />
+            <label className="text-xl font-bold max-md:ml-[30px]">E-mail</label><br />
+            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="w-[400px] h-[30px] rounded-[15px] mb-[20px] text-black max-md:ml-[30px]" /><br />
           </Reveal>
           <Reveal>
-            <label className="text-xl font-bold">Message</label><br />
-            <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="w-[400px] h-[100px] rounded-[15px] mb-[20px] text-black" /><br />
-            <button className="bg-blue-600 text-[1rem] rounded-[15px] w-[140px] h-[40px]">Send</button>
+            <label className="text-xl font-bold max-md:ml-[30px]">Message</label><br />
+            <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="w-[400px] h-[100px] rounded-[15px] mb-[20px] text-black max-md:ml-[30px]" /><br />
+            <button className="bg-blue-600 text-[1rem] rounded-[15px] w-[140px] h-[40px] max-md:ml-[30px]">Send</button>
           </Reveal>
-          {error && <p className="text-red-500">{error}</p>}
-          {works && <p className="text-green-500">{works}</p>}
+          {error && <p className="text-red-500 max-md:ml-[30px]">{error}</p>}
+          {works && <p className="text-green-500 max-md:ml-[30px]">{works}</p>}
         </form>
       </div>
     </div>
