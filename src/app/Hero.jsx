@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const handleDownloadCV = () => {
   const filename = "AndreiAlionteCV.pdf";
-  const filepath = "/public/AndreiAlionteCV.pdf";
+  const filepath = "/AndreiAlionteCV.pdf";
   saveAs(filepath, filename);
 }
 
