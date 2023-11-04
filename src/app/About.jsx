@@ -56,7 +56,7 @@ function About() {
         <GlobeComponent />
       </div> */}
       <div className="flex flex-col justify-center items-center mt-2 mb-9">
-      <h1 className="mt-16 text-blue-400 font-bold text-lg md:text-xl">My links</h1>
+      <h1 className="mt-5 text-blue-400 font-bold text-lg md:text-xl">My links</h1>
       <div className="flex flex-row justify-center items-center space-x-4 mt-1">
       <Link href="https://github.com/andreialionte">
             <Image src="/github.png" alt="github" width={33} height={33} className="mt-4"/>
