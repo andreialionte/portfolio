@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Hero from "./Hero.jsx";
 import Navbar from './Navbar.jsx';
 import About from './About.jsx';
