@@ -10,9 +10,9 @@ function Navbar() {
       <Image src={logonavbar2} alt="logo" width={300} height={50}/>
 
       <div className="flex space-x-20 items-center text-[#E5E7EB]">
-        <Link to="about" duration={700} smooth={true}  className="text-[1.5rem] font-bold max-md:hidden ">About</Link>
-        <Link to="projects" duration={700} smooth={true} className="text-[1.5rem] font-bold max-md:hidden ">Projects</Link>
-        <Link to="contact" duration={1000} smooth={true}  className="text-[1.5rem] font-bold max-md:hidden">Contact</Link>
+        <Link to="about" duration={700} smooth={true}  className="text-[1.5rem] font-bold max-md:hidden cursor-pointer">About</Link>
+        {/* <Link to="projects" duration={700} smooth={true} className="text-[1.5rem] font-bold max-md:hidden cursor-pointer">Projects</Link> */}
+        <Link to="contact" duration={1000} smooth={true}  className="text-[1.5rem] font-bold max-md:hidden cursor-pointer">Contact</Link>
       </div>
     </div>
   );
