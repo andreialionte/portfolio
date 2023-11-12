@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 function Reveal(props) {
   const [ref, inView] = useInView({
     threshold: 0.2, 
-    triggerOnce: true, 
+    triggerOnce: false,
   });
 
   return (
